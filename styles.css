@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-.header {
+.section.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,13 +14,13 @@ body {
     gap: 50px;
 }
 
-.header .logo {
+.section.header .logo {
     font-weight: bold;
     font-size: 24px;
     margin: 0px;
 }
 
-.header .pages {
+.section.header .pages {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -28,7 +28,7 @@ body {
     padding: 0px;
 }
 
-.hero {
+.section.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,10 @@ body {
     background-color: #1F2937;
     color: white;
     gap: 30px;
+}
+
+.section.hero h1 {
+    font-size: 48px;
 }
 
 .hero-image {
@@ -52,16 +56,19 @@ body {
     color: white;
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
+    border: 0px;
 }
 
-.content .title {
+.section.content h1 {
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
     margin: 30px 0px;
 }
 
-.content .items {
+.section.content .items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,14 +79,50 @@ body {
     gap: 50px;
 }
 
-.content .items .item {
+.section.content .items .item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.content img {
+.section.content img {
     width: 200px;
     background-color: white;
+}
+
+.section.quote {
+    padding: 20px 300px;
+    background-color: #E5E7EB;
+}
+
+.section.quote .quote {
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+}
+
+.section.quote .speaker {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.section.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 400px;
+    padding: 50px;
+    background-color: #3882F6;
+    color: white;
+}
+
+.section.call .sign-up {
+    border: 2px solid white;
+}
+
+.section.call p {
+    margin: 5px;
 }
